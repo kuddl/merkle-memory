@@ -1,6 +1,9 @@
 # merkle-memory
-Alejandro 
+
+Alejandro
 
 Mitan Omar
 
 Francis
+
+Tobias
