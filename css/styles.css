@@ -1,7 +1,28 @@
+body {
+  position: relative;
+}
+
 .header {
   background-color: #12295d;
   position: fixed;
   width: 99%;
+}
+.game {
+  min-height: 50rem;
+}
+footer {
+  background-color: teal;
+  width: 99%;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-links {
+  padding: inherit;
 }
 .header-title {
   padding: 0.8rem;
@@ -31,7 +52,10 @@
   margin-right: 0.5rem;
 }
 @media only screen and (max-width: 844px) {
-    .header {
-        width: 98%;
-    }
+  .header {
+    width: 98%;
+  }
+  footer {
+    width: 98%;
+  }
 }
