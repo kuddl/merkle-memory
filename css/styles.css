@@ -1,3 +1,10 @@
 .header {
     background-color: #12295D;
 }
+.header-title {
+    padding: .8rem;
+}
+.header .header-title h1 {
+    color: white;
+    margin-left: 1rem;
+}
