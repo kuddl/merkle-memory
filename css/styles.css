@@ -10,6 +10,10 @@ body {
 .game {
   min-height: 50rem;
 }
+.game-login {
+  min-height: 50rem;
+  margin-top: 100px;
+}
 footer {
   background-color: teal;
   width: 99%;
