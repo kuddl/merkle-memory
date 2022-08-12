@@ -14,9 +14,15 @@ body {
   padding-top: 10%;
   min-height: 100rem;
 }
-.game-login div:first-child {
+.login-form__inputs {
   display: flex;
   flex-direction: column;
+}
+.start-game-button {
+  margin-left: 1rem;
+}
+.login-form {
+  display: flex;
 }
 footer {
   background-color: teal;
@@ -68,10 +74,8 @@ footer {
   }
 }
 
-
 .boxed label {
   display: inline-block;
-  width: 200px;
   padding: 10px;
   border: solid 2px #12295d;
   transition: all 0.3s;
