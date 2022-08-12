@@ -79,6 +79,7 @@ footer {
   padding: 10px;
   border: solid 2px #12295d;
   transition: all 0.3s;
+  margin-bottom: 0.5rem;
 }
 
 .boxed input[type="radio"] {
