@@ -8,8 +8,7 @@ export default class MemoryCard extends HTMLElement {
 
     // Get attrs
     const backImage =
-      this.getAttribute("backside-image") ||
-      "public/img/backside/backside1.svg";
+      this.getAttribute("backside-image") || "img/backside/backside1.svg";
     const image = this.getAttribute("image");
     const isOpen = this.hasAttribute("open");
     const size = this.getAttribute("size") || "150px";
