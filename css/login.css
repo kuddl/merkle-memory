@@ -1,0 +1,43 @@
+.boxed label {
+  display: inline-block;
+  padding: 10px;
+  border: solid 2px #12295d;
+  transition: all 0.3s;
+  margin-bottom: 0.5rem;
+}
+
+.boxed input[type="radio"] {
+  display: none;
+}
+
+.boxed input[type="radio"]:checked + label {
+  border: solid 2px #12295d;
+  background-color: #12295d;
+  color: white;
+}
+.game {
+  min-height: 50rem;
+}
+.game-login {
+  padding-top: 10%;
+  text-align: center;
+}
+.login-form__inputs {
+  display: flex;
+  flex-direction: column;
+}
+.start-game-button {
+  margin-left: 1rem;
+}
+.login-form {
+  display: flex;
+  justify-content: center;
+}
+.login-form__players {
+  margin-bottom: 1rem;
+}
+
+.header__default {
+  color: white;
+  margin-left: 1rem;
+}
