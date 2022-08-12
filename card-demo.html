@@ -6,14 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="js/MemoryCard.mjs" type="module" defer></script>
+  <style>
+    body {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      width: 920px;
+    }
+  </style>
 </head>
-<body style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 10px; width: 930px;">
+<body>
+  <memory-card size="300px"></memory-card>
   <memory-card></memory-card>
   <memory-card></memory-card>
+  <memory-card backside-image="public/img/backside/backside2.svg"></memory-card>
   <memory-card></memory-card>
-  <memory-card backside-image="images/jsimage.png"></memory-card>
-  <memory-card></memory-card>
-  <memory-card image="images/jsimage.png"></memory-card>
+  <memory-card image="public/img/frontside-abstract/front1.svg"></memory-card>
   <memory-card></memory-card>
   <memory-card></memory-card>
   <memory-card open></memory-card>
