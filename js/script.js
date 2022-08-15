@@ -14,5 +14,8 @@ const gameModel = {
 const userdata = store.namespace("userdata");
 const gamedata = store.namespace("gamedata");
 
-userdata(userModel);
-gamedata(gameModel);
+// cheap solution to not overwrite custom values;
+if (!userdata.has("player1")) {
+  userdata(userModel);
+  gamedata(gameModel);
+}
