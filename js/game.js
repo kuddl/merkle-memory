@@ -15,6 +15,10 @@ function setupBoard() {
   const scoreElement = document.querySelector(".score");
   const gameboard = document.querySelector(".game-grid");
   const imageSet = "frontside-colored";
+  gamedata({
+    winner: "",
+    score: [0, 0],
+  });
 
   // get random backside image
   const backsideImage = `img/backside/backside${
@@ -94,6 +98,10 @@ function isGameDone() {
 
 function getWinnerName() {
   const userData = userdata();
+
+  gamedata({
+    score: score,
+  });
   if (score[0] > score[1]) {
     return userData.player1.name;
   }
@@ -123,6 +131,7 @@ function game(event) {
       if (isGameDone()) {
         // set local storage
         gamedata("winner", getWinnerName());
+        window.location.href = "success.html";
       }
       hideCard(openCards[0]);
       hideCard(openCards[1]);

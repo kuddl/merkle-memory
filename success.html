@@ -13,10 +13,11 @@
     <script src="js/script.js" defer></script>
     <script src="js/confettiFX.js" defer></script>
     <script src="js/MemoryCard.mjs" type="module" defer></script>
+    <script src="js/success.js" defer></script>
   </head>
 
   <body>
-    <canvas id="confetti"></canvas>
+    <canvas id="confetti" class="confetti--hidden"></canvas>
     <div class="app">
       <header class="header">
         <div class="header__default">
@@ -24,7 +25,17 @@
         </div>
       </header>
       <main class="main">
-        <div class="centerstage">placeholder centerstage</div>
+        <div class="centerstage">
+          <div class="score"></div>
+          <div class="player player__draw player--hidden">Sorry, no winner</div>
+          <div class="player player__winner player--hidden">
+            <span></span> has won the game!
+          </div>
+          <div class="buttons">
+            <button class="button button--play-again">Play again</button>
+            <button class="button button--reset">Reset and play again</button>
+          </div>
+        </div>
       </main>
       <footer class="footer">
         <div>
