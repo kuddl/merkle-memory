@@ -17,6 +17,13 @@ function resetLoginForm(e) {
 }
 
 function submitLoginForm(e) {
+  if (
+    document.getElementById("player1").value.length === 0 ||
+    document.getElementById("player2").value.length === 0 ||
+    !document.querySelector("input[name=playground]:checked")
+  ) {
+    return false;
+  }
   userdata("player1", { name: document.getElementById("player1").value });
   userdata("player2", { name: document.getElementById("player2").value });
   const dimensions = document.querySelector(
