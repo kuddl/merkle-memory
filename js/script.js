@@ -9,6 +9,7 @@ const gameModel = {
   dimensions: { x: 4, y: 4 },
   tileSet: "default",
   tileBackImage: "default",
+  winner: "",
 };
 
 const userdata = store.namespace("userdata");

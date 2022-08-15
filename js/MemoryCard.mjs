@@ -6,17 +6,17 @@ export default class MemoryCard extends HTMLElement {
   constructor() {
     super();
 
-    // Get attrs
+    // get attrs
     const backImage =
       this.getAttribute("backside-image") || "img/backside/backside1.svg";
     const image = this.getAttribute("image");
     const isOpen = this.hasAttribute("open");
     const size = this.getAttribute("size") || "150px";
 
-    // Attach shadow root
+    // attach shadow root
     const shadow = this.attachShadow({ mode: "open" });
 
-    // Create child elements
+    // create child elements
     const card = document.createElement("div");
     card.setAttribute("id", "card");
     card.setAttribute("class", "memory-card");
@@ -56,7 +56,6 @@ export default class MemoryCard extends HTMLElement {
         transform-style: preserve-3d;
       }
 
-      .memory-card:hover .flip-card,
       .open {
         transform: rotateY(180deg);
       }
