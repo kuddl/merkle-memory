@@ -1,6 +1,13 @@
 .game-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 1rem;
-  }
+  --gameX: 4;
+  --gameY: 4;
+  display: grid;
+  grid-template-columns: repeat(var(--gameX), 1fr);
+  grid-template-rows: repeat(var(--gameY), 1fr);
+  grid-gap: 1rem;
+}
+.header__game {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

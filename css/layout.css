@@ -23,6 +23,8 @@ body {
   grid-area: header;
   padding: 1.5em;
   background-color: #12295d;
+  color: white;
+  display: flex;
 }
 
 .main {
@@ -46,7 +48,6 @@ body {
   min-height: 200px;
   min-width: 200px;
   background-color: #fff;
-  
 }
 .footer {
   background-color: teal;
@@ -57,4 +58,3 @@ body {
 .footer-links {
   padding: inherit;
 }
-
