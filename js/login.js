@@ -10,7 +10,7 @@ function fillLoginForm() {
 }
 
 function resetLoginForm(e) {
-  // Use default rest action and only blank local storage
+  // use default rest action and only blank local storage
   userdata("player1", { name: "" });
   userdata("player2", { name: "" });
   gamedata("dimensions", null);

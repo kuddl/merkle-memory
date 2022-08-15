@@ -11,3 +11,13 @@
   display: flex;
   justify-content: space-between;
 }
+
+.player--active {
+  background-color: #ff0000;
+}
+
+.card--hidden {
+  transition: all 400ms 1s;
+  opacity: 25%;
+  filter: blur(5px);
+}
