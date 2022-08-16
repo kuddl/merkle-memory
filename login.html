@@ -13,16 +13,23 @@
   </head>
 
   <body>
-    <div class="app">
+    <div class="app app--login">
       <header class="header">
-        <div class="header__default">
-          <h1>Merkle Magic Memory</h1>
+        <div class="header__login">
+          <img class="header__logo" src="/img/merkle-logo.png" />
+          <h1 class="header__title">Magic Memory</h1>
         </div>
       </header>
       <main class="main">
         <div class="centerstage">
           <div class="game-login">
-            <form action="game.html" id="login" name="login-form" onreset="resetLoginForm()" onsubmit="return submitLoginForm()">
+            <form
+              action="game.html"
+              id="login"
+              name="login-form"
+              onreset="resetLoginForm()"
+              onsubmit="return submitLoginForm()"
+            >
               <div class="login-form">
                 <div class="login-form__inputs">
                   <label for="player1" class="login-form__players">
@@ -106,12 +113,12 @@
       </main>
       <footer class="footer">
         <div>
-          <h3>&copy By Merkle</h3>
+          <h3>&copy by Merkle</h3>
         </div>
-        <div class="footer-links">
-          <a href="#">Link1</a>
-          <a href="#">Link2</a>
-          <a href="#">Link3</a>
+        <div class="footer__link-container">
+          <a class="footer__link" href="#">GitHub</a>
+          <span class="footer__link-pipe"> | </span>
+          <a class="footer__link" href="#">About us</a>
         </div>
       </footer>
     </div>

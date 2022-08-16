@@ -1,5 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --turqoise-gradient-start: #3aa1a4;
+  --turqoise-gradient-end: #66aeaf;
+  --violet-gradient-start: #4e307c;
+  --violet-gradient-end: #9a7cc9;
+  --blue-gradient-start: #2b4a8e;
+  --blue-gradient-end: #6a86c5;
+  --button-primary: #3b1f66;
+  --button-secondary: #114647;
+  --white: #ffffff;
+  --input-player-1-color: #8450d8;
+  --input-player-2-color: #00cacf;
+  --header-player-1-color: #cbabff;
+  --header-player-2-color: #a2f9fb;
+  --header-player-1-color-active: #8450d8;
+  --header-player-2-color-active: #00cacf;
+  --input-radius: 35px;
+}
+
+.drop-shadow {
+  filter: drop-shadow(12px 2px 26px rgba(0, 8, 49, 0.25));
+}
+
 * {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 html,
 body {
@@ -19,42 +45,52 @@ body {
     "main"
     "footer";
 }
+
 .header {
   grid-area: header;
-  padding: 1.5em;
-  background-color: #12295d;
+  padding: 40px 80px;
   color: white;
   display: flex;
+  height: 140px;
 }
 
 .main {
   padding: 4em;
   grid-area: main;
-  background-color: ghostwhite;
   overflow-y: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer {
-  padding: 2em;
-  grid-area: footer;
-  background-color: bisque;
-}
-
 /* this is the "main area" for all games, it's centered v and h */
 .centerstage {
   min-height: 200px;
   min-width: 200px;
-  background-color: #fff;
 }
+
 .footer {
-  background-color: teal;
-  padding: 1rem;
+  padding: 20px 80px;
+  grid-area: footer;
   display: flex;
   justify-content: space-between;
+  color: var(--white);
+  align-items: center;
+  font-size: 20px;
 }
-.footer-links {
-  padding: inherit;
+
+.footer__link {
+  text-decoration: none;
+  color: var(--white);
+  opacity: 0.5;
+  transition: all 250ms;
+}
+
+.footer__link:hover {
+  opacity: 1;
+}
+
+.footer__link-pipe {
+  opacity: 0.5;
+  margin: 0 10px;
 }
