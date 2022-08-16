@@ -117,7 +117,7 @@ function hideCard(card) {
 
 function game(event) {
   // if the card is already open, then don't do anything
-  if (event.target.getAttribute("open")) {
+  if (event.target.getAttribute("open") || openCards.length >= 2) {
     return;
   }
   openCards.push(event.target);
