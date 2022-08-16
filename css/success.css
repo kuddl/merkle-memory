@@ -45,10 +45,16 @@
   font-weight: bold;
 }
 
-.player__winner{
+.player__winner {
 
   font-size: 35px;
   color: var(--white);
+}
+
+.player__draw{
+  font-size: 35px;
+  color: var(--white);
+
 }
 
 .header{
