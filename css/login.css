@@ -1,7 +1,7 @@
 .boxed {
   margin-left: 3.5rem;
 }
-.boxed label {
+.boxed .label {
   cursor: pointer;
   height: 70px;
   width: 120px;
