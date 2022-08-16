@@ -74,6 +74,7 @@
   border: none;
   margin: 10px;
   text-transform: uppercase;
+  padding: 10px;
 }
 
 .button:hover{
