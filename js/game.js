@@ -18,7 +18,10 @@ function setupBoard() {
   const player2Element = document.querySelector(".player2");
   const scoreElement = document.querySelector(".score");
   const gameboard = document.querySelector(".game-grid");
-  const imageSet = "frontside-colored";
+  // const imageSet = "frontside-colored";
+  const imageSet = ["frontside-colored", "frontside-abstract"][
+    Math.round(Math.random())
+  ];
   gamedata({
     winner: "",
     score: [0, 0],
