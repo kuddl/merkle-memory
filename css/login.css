@@ -1,9 +1,21 @@
+.boxed {
+  margin-left: 3.5rem;
+}
 .boxed label {
+  cursor: pointer;
+  height: 70px;
+  width: 120px;
+  padding: 20px;
   display: inline-block;
-  padding: 10px;
-  border: solid 2px #12295d;
+  align-items: center;
+  font-size: 20px;
+  color: var(--white);
+  font-weight: bold;
+  border: solid 2px var(--button-secondary);
+  background-color: var(--button-secondary);
   transition: all 0.3s;
   margin-bottom: 0.5rem;
+  box-shadow: 7px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 .boxed input[type="radio"] {
@@ -11,10 +23,52 @@
 }
 
 .boxed input[type="radio"]:checked + label {
-  border: solid 2px #12295d;
-  background-color: #12295d;
+  border: solid 2px var(--button-secondary);
+  background-color: var(--button-secondary);
+  opacity: 50%;
   color: white;
 }
+
+.boxed input[type="radio"]:hover + label {
+  background-color: #155a5b;
+  border: solid 2px #155a5b;
+}
+
+input[type="text"] {
+  margin-left: 1.89rem;
+  font-size: 20px;
+  padding: 10px 335px 10px 40px;
+  border: none;
+  width: 531px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: var(--white);
+}
+
+.login-form__players {
+  font-weight: bold;
+  font-size: 35px;
+  color: var(--white);
+}
+
+input[class="login-form__player1"] {
+  color: var(--input-player-1-color);
+}
+
+input[class="login-form__player2"] {
+  color: var(--input-player-2-color);
+}
+
+.login-form__player1::placeholder {
+  font-size: 20px;
+  color: var(--input-player-1-color);
+}
+
+.login-form__player2::placeholder {
+  font-size: 20px;
+  color: var(--input-player-2-color);
+}
+
 .game {
   min-height: 50rem;
 }
@@ -23,6 +77,7 @@
   text-align: center;
 }
 .login-form__inputs {
+  margin-left: 5rem;
   display: flex;
   flex-direction: column;
 }
@@ -60,4 +115,36 @@
 
 .header__title {
   font-size: 40px;
+}
+
+.game-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  color: var(--white);
+  font-size: 30px;
+  border: none;
+  width: 250px;
+  height: 50px;
+  background: var(--button-primary);
+}
+
+.login-buttons {
+  margin-left: 5rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.playground-container {
+  display: flex;
+}
+
+
+
+.game-title {
+  font-size: 2.9em;
+  color: white;
 }
