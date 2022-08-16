@@ -1,3 +1,5 @@
+const gameData = gamedata();
+const userData = userdata();
 // shuffle array in place
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -7,9 +9,11 @@ function shuffleArray(array) {
   return array;
 }
 
+const amountOfPairs = Math.floor(
+  (parseInt(gameData.dimensions.x) * parseInt(gameData.dimensions.y)) / 2
+);
+
 function setupBoard() {
-  const gameData = gamedata();
-  const userData = userdata();
   const player1Element = document.querySelector(".player1");
   const player2Element = document.querySelector(".player2");
   const scoreElement = document.querySelector(".score");
@@ -34,9 +38,6 @@ function setupBoard() {
   gameboard.style.setProperty("--gameY", gameData.dimensions.y);
 
   const allImages = [];
-  const amountOfPairs = Math.floor(
-    (parseInt(gameData.dimensions.x) * parseInt(gameData.dimensions.y)) / 2
-  );
 
   for (let i = 1; i < 21; i++) {
     allImages.push(`img/${imageSet}/front${i}.svg`);
@@ -56,7 +57,6 @@ function setupBoard() {
       const card = document.createElement("memory-card");
       card.setAttribute("image", pickedImages[i]);
       card.setAttribute("backside-image", backsideImage);
-      card.setAttribute("class", "drop-shadow");
       card.addEventListener("click", game);
       cards.push(card);
     }

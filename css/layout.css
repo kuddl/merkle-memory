@@ -95,3 +95,24 @@ body {
   opacity: 0.5;
   margin: 0 10px;
 }
+
+.navigation-button {
+  /*font-size: 40px;*/
+  transition: 250ms;
+  cursor: pointer;
+  font-size: 30px;
+  background-color: var(--button-primary);
+  color: var(--white);
+  border: none;
+  margin: 10px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+.navigation-button:hover {
+  filter: brightness(var(--hover-brightness));
+}
+
+.navigation-button:active {
+  filter: brightness(var(--active-brightness));
+}

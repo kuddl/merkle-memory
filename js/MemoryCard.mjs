@@ -45,6 +45,7 @@ export default class MemoryCard extends HTMLElement {
         width: ${size};
         height: ${size};
         perspective: 1000px;
+        filter: drop-shadow(12px 2px 26px rgba(0, 8, 49, 0.25));
       }
 
       .flip-card {

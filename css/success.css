@@ -61,27 +61,3 @@
 .footer {
   z-index: 200;
 }
-
-.button {
-  /*font-size: 40px;*/
-  transition: 250ms;
-  cursor: pointer;
-  font-size: 30px;
-  background-color: var(--button-primary);
-  color: var(--white);
-  border: none;
-  margin: 10px;
-  text-transform: uppercase;
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-}
-
-.button:hover {
-  filter: brightness(var(--hover-brightness));
-}
-
-.button:active {
-  filter: brightness(var(--active-brightness));
-}

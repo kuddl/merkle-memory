@@ -1,7 +1,7 @@
 .boxed {
-  margin-left: 3.5rem;
+  margin-left: 2rem;
 }
-.boxed label {
+.boxed .label {
   cursor: pointer;
   height: 70px;
   width: 120px;
@@ -14,8 +14,8 @@
   border: solid 2px var(--button-secondary);
   background-color: var(--button-secondary);
   transition: all 0.3s;
-  margin-bottom: 0.5rem;
   box-shadow: 7px 4px 20px rgba(0, 0, 0, 0.25);
+  margin: 0.5rem;
 }
 
 .boxed input[type="radio"] {
@@ -37,7 +37,7 @@
 input[type="text"] {
   margin-left: 1.89rem;
   font-size: 20px;
-  padding: 10px 335px 10px 40px;
+  padding: 10px 40px 10px 40px;
   border: none;
   width: 531px;
   height: 70px;
@@ -73,16 +73,12 @@ input[class="login-form__player2"] {
   min-height: 50rem;
 }
 .game-login {
-  padding-top: 10%;
   text-align: center;
 }
 .login-form__inputs {
   margin-left: 5rem;
   display: flex;
   flex-direction: column;
-}
-.start-game-button {
-  margin-left: 1rem;
 }
 .login-form {
   display: flex;
@@ -117,22 +113,9 @@ input[class="login-form__player2"] {
   font-size: 40px;
 }
 
-.game-buttons {
-  display: flex;
-  justify-content: space-between;
-}
-button {
-  color: var(--white);
-  font-size: 30px;
-  border: none;
-  width: 250px;
-  height: 50px;
-  background: var(--button-primary);
-}
-
 .login-buttons {
-  margin-left: 5rem;
-  margin-top: 1rem;
+  margin-left: 6rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -140,11 +123,11 @@ button {
 
 .playground-container {
   display: flex;
+  margin-left: 1rem;
 }
 
-
-
 .game-title {
-  font-size: 2.9em;
+  font-size: 50px;
+  margin-bottom: 6rem;
   color: white;
 }
