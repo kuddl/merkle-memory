@@ -91,7 +91,7 @@ function loadSuccessPage() {
   setTimeout(() => {
     gamedata("winner", getWinnerName());
     window.location.href = "success.html";
-  }, 2000);
+  }, 3000);
 }
 
 displayActivePlayer();
@@ -139,12 +139,12 @@ function game(event) {
       });
       score[activePlayer]++;
       displayNewScore();
-      if (isGameDone()) {
-        loadSuccessPage();
-      }
       hideCard(openCards[0]);
       hideCard(openCards[1]);
       openCards = [];
+      if (isGameDone()) {
+        loadSuccessPage();
+      }
     } else {
       // if cards don't match
       activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
