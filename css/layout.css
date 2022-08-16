@@ -55,7 +55,6 @@ body {
 }
 
 .main {
-  padding: 4em;
   grid-area: main;
   overflow-y: auto;
   display: flex;

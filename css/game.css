@@ -10,10 +10,39 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.player {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 10px 30px;
+}
+
+.player1 {
+  color: var(--header-player-1-color);
+}
+
+.player2 {
+  color: var(--header-player-2-color);
 }
 
 .player--active {
-  background-color: #ff0000;
+  background-color: var(--white);
+  border-radius: var(--input-radius);
+}
+.player1.player--active {
+  color: var(--header-player-1-color-active);
+}
+
+.player1.player--active {
+  color: var(--header-player-2-color-active);
+}
+
+.score {
+  color: var(--white);
+  font-size: 60px;
+  font-weight: 700;
 }
 
 .card--hidden {
@@ -26,8 +55,8 @@
   background: url("data:image/svg+xml,%3Csvg width='2001' height='1116' viewBox='0 0 2001 1116' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.35'%3E%3Cpath d='M19.7607 1114L272.417 867.992L430.198 264.575L965.933 817.965L1487.23 645.707L1760.51 146.47L1975.53 264.575' stroke='white' stroke-width='2'/%3E%3Cpath opacity='0.5' d='M1.71387 301.193L272.417 869.023L968.511 815.902L1760.51 147.502L1999.76 1114L1487.75 645.707L983.464 815.902L19.7607 1114' stroke='white'/%3E%3Cpath opacity='0.5' d='M1760.51 148.018L0.166992 299.645' stroke='white'/%3E%3Cpath d='M1760.51 153.691C1763.93 153.691 1766.7 150.92 1766.7 147.502C1766.7 144.084 1763.93 141.313 1760.51 141.313C1757.09 141.313 1754.32 144.084 1754.32 147.502C1754.32 150.92 1757.09 153.691 1760.51 153.691Z' fill='white'/%3E%3Cpath d='M1487.23 650.865C1490.65 650.865 1493.42 648.094 1493.42 644.676C1493.42 641.258 1490.65 638.487 1487.23 638.487C1483.81 638.487 1481.04 641.258 1481.04 644.676C1481.04 648.094 1483.81 650.865 1487.23 650.865Z' fill='white'/%3E%3Cpath d='M431.229 270.248C434.647 270.248 437.417 267.477 437.417 264.059C437.417 260.641 434.647 257.87 431.229 257.87C427.812 257.87 425.042 260.641 425.042 264.059C425.042 267.477 427.812 270.248 431.229 270.248Z' fill='white'/%3E%3Cpath d='M967.479 823.122C970.897 823.122 973.667 820.351 973.667 816.933C973.667 813.515 970.897 810.744 967.479 810.744C964.062 810.744 961.292 813.515 961.292 816.933C961.292 820.351 964.062 823.122 967.479 823.122Z' fill='white'/%3E%3Cpath d='M272.417 874.696C275.834 874.696 278.604 871.925 278.604 868.507C278.604 865.089 275.834 862.319 272.417 862.319C269 862.319 266.229 865.089 266.229 868.507C266.229 871.925 269 874.696 272.417 874.696Z' fill='white'/%3E%3C/g%3E%3C/svg%3E"),
     linear-gradient(
         180deg,
-        var(--turqoise-gradient-start) 0%,
-        var(--turqoise-gradient-end) 100%
+        var(--blue-gradient-start) 0%,
+        var(--blue-gradient-end) 100%
       )
       center 100%;
 }

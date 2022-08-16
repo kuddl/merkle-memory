@@ -56,6 +56,7 @@ function setupBoard() {
       const card = document.createElement("memory-card");
       card.setAttribute("image", pickedImages[i]);
       card.setAttribute("backside-image", backsideImage);
+      card.setAttribute("class", "drop-shadow");
       card.addEventListener("click", game);
       cards.push(card);
     }
@@ -146,8 +147,8 @@ function game(event) {
     } else {
       // if cards don't match
       activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
-      displayActivePlayer();
       setTimeout(() => {
+        displayActivePlayer();
         openCards.forEach((card) => {
           card.removeAttribute("open");
         });
