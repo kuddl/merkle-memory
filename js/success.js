@@ -14,11 +14,13 @@
   }
 
   document
-    .querySelector(".button--play-again")
+    .querySelector(".navigation-button--play-again")
     .addEventListener("click", () => {
       window.location.href = "/game.html";
     });
-  document.querySelector(".button--reset").addEventListener("click", () => {
-    window.location.href = "/login.html";
-  });
+  document
+    .querySelector(".navigation-button--reset")
+    .addEventListener("click", () => {
+      window.location.href = "/login.html";
+    });
 })();
