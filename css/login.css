@@ -1,3 +1,6 @@
+.boxed {
+  margin-left: 3.5rem;
+}
 .boxed label {
   height: 70px;
   width: 120px;
@@ -100,4 +103,8 @@ input[class="login-form__player2"] {
 
 .header__title {
   font-size: 40px;
+}
+
+.playground-container {
+  display: flex;
 }
