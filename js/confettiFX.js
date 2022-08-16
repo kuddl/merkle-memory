@@ -16,7 +16,7 @@ let ctx = canvas.getContext('2d');
 //Create an array for the number of confetti particles
 let particles = [];
 //Set the number of confetti particles
-let numberOfParticles = 500;
+let numberOfParticles = 50;
 //Get the current time
 let lastUpdateTime = Date.now();
 
