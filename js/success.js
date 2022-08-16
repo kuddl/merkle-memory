@@ -21,6 +21,6 @@
   document
     .querySelector(".navigation-button--reset")
     .addEventListener("click", () => {
-      window.location.href = "/login.html";
+      window.location.href = "/";
     });
 })();
