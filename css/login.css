@@ -1,9 +1,12 @@
 .boxed label {
   height: 70px;
   width: 120px;
-  padding: 10px 30px;
+  padding: 20px;
   display: inline-block;
   align-items: center;
+  font-size: 20px;
+  color: var(--white);
+  font-weight: bold;
   border: solid 2px var(--button-secondary);
   transition: all 0.3s;
   margin-bottom: 0.5rem;
