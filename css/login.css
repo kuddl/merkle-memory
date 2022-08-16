@@ -32,7 +32,7 @@ input[type="text"] {
   border: none;
   width: 531px;
   height: 70px;
-  border-radius:35px;
+  border-radius: 35px;
   background-color: var(--white);
 }
 
@@ -128,4 +128,9 @@ button {
 
 .playground-container {
   display: flex;
+}
+
+.game-title {
+  font-size: 2.9em;
+  color: white;
 }
