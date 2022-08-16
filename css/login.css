@@ -27,6 +27,7 @@
 }
 
 input[type="text"] {
+  margin-left: 1.89rem;
   font-size: 20px;
   padding: 10px 335px 10px 40px;
   border: none;
@@ -122,6 +123,7 @@ button {
 }
 
 .login-buttons {
+  margin-left: 5rem;
   margin-top: 1rem;
   display: flex;
   justify-content: center;
