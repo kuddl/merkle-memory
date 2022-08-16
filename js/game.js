@@ -34,8 +34,9 @@ function setupBoard() {
   gameboard.style.setProperty("--gameY", gameData.dimensions.y);
 
   const allImages = [];
-  const amountOfPairs =
-    (parseInt(gameData.dimensions.x) * parseInt(gameData.dimensions.y)) / 2;
+  const amountOfPairs = Math.floor(
+    (parseInt(gameData.dimensions.x) * parseInt(gameData.dimensions.y)) / 2
+  );
 
   for (let i = 1; i < 21; i++) {
     allImages.push(`img/${imageSet}/front${i}.svg`);
@@ -98,10 +99,7 @@ function loadSuccessPage() {
 displayActivePlayer();
 
 function isGameDone() {
-  return (
-    score[0] + score[1] ===
-    (parseInt(gamedata().dimensions.x) * parseInt(gamedata().dimensions.y)) / 2
-  );
+  return score[0] + score[1] === amountOfPairs;
 }
 
 function getWinnerName() {
