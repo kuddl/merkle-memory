@@ -82,7 +82,7 @@ function drawSqaure(p){
 
 function drawCircle(p){
     ctx.beginPath();
-    ctx.arc(p.x+ 100, p.y+100, p.size, 0, 2 * Math.PI);
+    ctx.arc(p.x, p.y, p.size, 0, 2 * Math.PI);
     ctx.fillStyle = p.color;
     ctx.fill();
 }
