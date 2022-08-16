@@ -143,8 +143,8 @@ function game(event) {
     } else {
       // if cards don't match
       activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
-      displayActivePlayer();
       setTimeout(() => {
+        displayActivePlayer();
         openCards.forEach((card) => {
           card.removeAttribute("open");
         });
