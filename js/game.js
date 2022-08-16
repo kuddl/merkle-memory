@@ -55,6 +55,7 @@ function setupBoard() {
       const card = document.createElement("memory-card");
       card.setAttribute("image", pickedImages[i]);
       card.setAttribute("backside-image", backsideImage);
+      card.setAttribute("class", "drop-shadow");
       card.addEventListener("click", game);
       cards.push(card);
     }
