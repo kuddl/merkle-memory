@@ -16,7 +16,7 @@
     <div class="app app--login">
       <header class="header">
         <div class="header__login">
-          <img class="header__logo" src="/img/merkle-logo.png" />
+          <img class="header__logo" src="./img/merkle-logo.png" alt="merkle-logo" />
           <h1 class="header__title">Magic Memory</h1>
         </div>
       </header>
@@ -35,21 +35,23 @@
                   <label for="player1" class="login-form__players">
                     Player 1 Name:
                     <input
+                      class="login-form__player1"
                       type="text"
                       name="player1"
                       id="player1"
-                      required,
-                      placeholder=""
+                      required
+                      placeholder="Enter Name"
                     />
                   </label>
                   <label for="player2" class="login-form__players">
                     Player 2 Name:
                     <input
+                      class="login-form__player2"
                       type="text"
                       name="player2"
                       id="player2"
-                      required,
-                      placeholder=""
+                      required
+                      placeholder="Enter Name"
                     />
                   </label>
                 </div>
@@ -57,11 +59,11 @@
                   <button type="submit">Start Game</button>
                 </div>
                 <div class="reset-game-button">
-                  <button type="reset">Rest</button>
+                  <button type="reset">Reset</button>
                 </div>
               </div>
               <br />
-              <label>Playground :</label>
+              <label class="login-form__players">Playground :</label>
               <div class="boxed">
                 <input
                   type="radio"

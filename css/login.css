@@ -1,7 +1,10 @@
 .boxed label {
+  height: 70px;
+  width: 120px;
+  padding: 10px 30px;
   display: inline-block;
-  padding: 10px;
-  border: solid 2px #12295d;
+  align-items: center;
+  border: solid 2px var(--button-secondary);
   transition: all 0.3s;
   margin-bottom: 0.5rem;
 }
@@ -11,10 +14,44 @@
 }
 
 .boxed input[type="radio"]:checked + label {
-  border: solid 2px #12295d;
-  background-color: #12295d;
+  border: solid 2px var(--button-secondary);
+  background-color: var(--button-secondary);
   color: white;
 }
+
+input[type="text"] {
+  font-size: 20px;
+  padding: 10px 335px 10px 40px;
+  border: none;
+  width: 531px;
+  height: 70px;
+  border-radius:35px;
+  background-color: var(--white);
+}
+
+.login-form__players {
+  font-size: 35px;
+  color: var(--white);
+}
+
+input[class="login-form__player1"] {
+  color: var(--input-player-1-color);
+}
+
+input[class="login-form__player2"] {
+  color: var(--input-player-2-color);
+}
+
+.login-form__player1::placeholder {
+  font-size: 20px;
+  color: var(--input-player-1-color);
+}
+
+.login-form__player2::placeholder {
+  font-size: 20px;
+  color: var(--input-player-2-color);
+}
+
 .game {
   min-height: 50rem;
 }
