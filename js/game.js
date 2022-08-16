@@ -88,6 +88,13 @@ function displayActivePlayer() {
   }
 }
 
+function loadSuccessPage() {
+  setTimeout(() => {
+    gamedata("winner", getWinnerName());
+    window.location.href = "success.html";
+  }, 3000);
+}
+
 displayActivePlayer();
 
 function isGameDone() {
@@ -133,14 +140,12 @@ function game(event) {
       });
       score[activePlayer]++;
       displayNewScore();
-      if (isGameDone()) {
-        // set local storage
-        gamedata("winner", getWinnerName());
-        window.location.href = "success.html";
-      }
       hideCard(openCards[0]);
       hideCard(openCards[1]);
       openCards = [];
+      if (isGameDone()) {
+        loadSuccessPage();
+      }
     } else {
       // if cards don't match
       activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
