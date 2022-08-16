@@ -37,6 +37,7 @@ input[type="text"] {
 }
 
 .login-form__players {
+  font-weight: bold;
   font-size: 35px;
   color: var(--white);
 }
@@ -67,6 +68,7 @@ input[class="login-form__player2"] {
   text-align: center;
 }
 .login-form__inputs {
+  margin-left: 5rem;
   display: flex;
   flex-direction: column;
 }
@@ -129,6 +131,8 @@ button {
 .playground-container {
   display: flex;
 }
+
+
 
 .game-title {
   font-size: 2.9em;
