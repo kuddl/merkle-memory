@@ -87,6 +87,11 @@ function displayActivePlayer() {
   }
 }
 
+function loadSuccessPage() {
+  gamedata("winner", getWinnerName());
+  window.location.href = "success.html";
+}
+
 displayActivePlayer();
 
 function isGameDone() {
@@ -133,11 +138,7 @@ function game(event) {
       score[activePlayer]++;
       displayNewScore();
       if (isGameDone()) {
-        setTimeout(() => {
-          // set local storage
-          gamedata("winner", getWinnerName());
-          window.location.href = "success.html";
-        }, 2000);
+        setTimeout(loadSuccessPage, 2000);
       }
       hideCard(openCards[0]);
       hideCard(openCards[1]);
