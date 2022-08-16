@@ -17,6 +17,7 @@ function resetLoginForm(e) {
 }
 
 function submitLoginForm(e) {
+  e.preventDefault();
   if (
     document.getElementById("player1").value.length === 0 ||
     document.getElementById("player2").value.length === 0 ||
@@ -30,6 +31,11 @@ function submitLoginForm(e) {
     "input[name=playground]:checked"
   ).value;
   gamedata("dimensions", { x: dimensions.charAt(0), y: dimensions.charAt(1) });
+  window.location.href = "game.html";
 }
+
+document.querySelector("#login").addEventListener("submit", (e) => {
+  submitLoginForm(e);
+});
 
 fillLoginForm();
