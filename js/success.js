@@ -12,15 +12,4 @@
     document.querySelector(".player__winner span").innerHTML = winner;
     document.querySelector("#confetti").classList.remove("confetti--hidden");
   }
-
-  document
-    .querySelector(".navigation-button--play-again")
-    .addEventListener("click", () => {
-      window.location.href = "/game.html";
-    });
-  document
-    .querySelector(".navigation-button--reset")
-    .addEventListener("click", () => {
-      window.location.href = "/";
-    });
 })();
