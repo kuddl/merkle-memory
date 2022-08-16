@@ -82,7 +82,7 @@ function drawSqaure(p){
 
 function drawCircle(p){
     ctx.beginPath();
-    ctx.arc(p.x+100, p.y, p.size, 0, 2 * Math.PI);
+    ctx.arc(p.x + p.offset * 10, p.y, p.size, 0, 2 * Math.PI);
     ctx.fillStyle = p.color;
     ctx.fill();
 }
@@ -95,6 +95,7 @@ this.gravity = (Math.random() * 0.5 + 0.75) * 0.1;
 this.rotation = (Math.PI * 2) * Math.random();
 this.rotationSpeed = (Math.PI * 2) * Math.random() * 0.001;
 this.color = setRandomColor();
+this.offset = Math.random() * (100 - (-100)) + (-100);
 }
 
 //Create the first batch of 500 particles
