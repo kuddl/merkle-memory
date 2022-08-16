@@ -13,6 +13,7 @@
   border: solid 2px var(--button-secondary);
   transition: all 0.3s;
   margin-bottom: 0.5rem;
+  box-shadow: 7px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 .boxed input[type="radio"] {
@@ -103,6 +104,26 @@ input[class="login-form__player2"] {
 
 .header__title {
   font-size: 40px;
+}
+
+.game-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  color: var(--white);
+  font-size: 30px;
+  border: none;
+  width: 250px;
+  height: 50px;
+  background: var(--button-primary);
+}
+
+.login-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .playground-container {
