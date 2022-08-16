@@ -74,7 +74,10 @@
   border: none;
   margin: 10px;
   text-transform: uppercase;
-  padding: 10px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
 }
 
 .button:hover{
