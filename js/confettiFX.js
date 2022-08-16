@@ -62,27 +62,41 @@ function draw (){
     ctx.clearRect(0,0, canvas.width, canvas.height);
     //Draw each particle to the canvas and set rotation
     particles.forEach(function (p){
-        ctx.save();
-        ctx.fillStyle = p.color;
-        ctx.translate(p.x + p.size / 2, p.y + p.size / 2);
-        ctx.rotate(p.rotation);
-        ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
-        ctx.restore();
+        drawSqaure(p);
+        drawCircle(p);
     });
+
+      
     //Animation frame loop
     requestAnimationFrame(draw);
 }
 
+function drawSqaure(p){
+    ctx.save();
+    ctx.fillStyle = p.color;
+    ctx.translate(p.x + p.size / 2, p.y + p.size / 2);
+    ctx.rotate(p.rotation);
+    ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+    ctx.restore(); 
+}
+
+function drawCircle(p){
+    ctx.beginPath();
+    ctx.arc(p.x+ 100, p.y+100, p.size, 0, 2 * Math.PI);
+    ctx.fillStyle = p.color;
+    ctx.fill();
+}
 //Function for creating a confetti particle with all predefined and randomized properties
 function Confetti(x,y) {
 this.x = x;
 this.y = y;
-this.size = (Math.random() * 0.5 + 0.75) * 20;
+this.size = (Math.random() * 0.5 + 0.75) * 10;
 this.gravity = (Math.random() * 0.5 + 0.75) * 0.1;
 this.rotation = (Math.PI * 2) * Math.random();
 this.rotationSpeed = (Math.PI * 2) * Math.random() * 0.001;
 this.color = setRandomColor();
 }
+
 //Create the first batch of 500 particles
 while(particles.length < numberOfParticles) {
     particles.push(new Confetti(Math.random() * canvas.width, Math.random() * canvas.height));
