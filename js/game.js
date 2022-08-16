@@ -133,9 +133,11 @@ function game(event) {
       score[activePlayer]++;
       displayNewScore();
       if (isGameDone()) {
-        // set local storage
-        gamedata("winner", getWinnerName());
-        window.location.href = "success.html";
+        setTimeout(() => {
+          // set local storage
+          gamedata("winner", getWinnerName());
+          window.location.href = "success.html";
+        }, 2000);
       }
       hideCard(openCards[0]);
       hideCard(openCards[1]);
