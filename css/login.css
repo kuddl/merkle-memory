@@ -2,6 +2,7 @@
   margin-left: 3.5rem;
 }
 .boxed label {
+  cursor: pointer;
   height: 70px;
   width: 120px;
   padding: 20px;
@@ -11,6 +12,7 @@
   color: var(--white);
   font-weight: bold;
   border: solid 2px var(--button-secondary);
+  background-color: var(--button-secondary);
   transition: all 0.3s;
   margin-bottom: 0.5rem;
   box-shadow: 7px 4px 20px rgba(0, 0, 0, 0.25);
@@ -23,7 +25,13 @@
 .boxed input[type="radio"]:checked + label {
   border: solid 2px var(--button-secondary);
   background-color: var(--button-secondary);
+  opacity: 50%;
   color: white;
+}
+
+.boxed input[type="radio"]:hover + label {
+  background-color: #155a5b;
+  border: solid 2px #155a5b;
 }
 
 input[type="text"] {
