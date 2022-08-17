@@ -1,13 +1,6 @@
 # merkle-memory
+Projct developed with Merkle Inc. DACH on our collaboration coding workshop.
 
-Alejandro
+## Play the game
 
-Mitan Omar
-
-Francis
-
-Tobias
-
-Marc
-
-Ralph
+https://kuddl.github.io/merkle-memory/
