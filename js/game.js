@@ -164,3 +164,38 @@ function game(event) {
 (function () {
   setupBoard();
 })();
+
+// auto solve
+(async () => {
+  return; // remove stopper
+  const allCards = document.querySelectorAll("memory-card");
+  const pause = (seconds = 1000) =>
+    new Promise((resolve) => setTimeout(resolve, seconds));
+  // start solving (iife)
+  (async function solveRound() {
+    await pause();
+    let firstCard = "";
+
+    allCards.forEach(async (card) => {
+      // already solved; return
+      if (card.classList.contains("card--hidden")) return;
+
+      // source of current card
+      const imgSrc = card.getAttribute("image");
+
+      // pick first
+      if (!firstCard) {
+        firstCard = imgSrc;
+        card.click();
+        return;
+      }
+
+      //  pick seccond
+      if (imgSrc === firstCard) {
+        await pause(1500);
+        card.click();
+        solveRound();
+      }
+    });
+  })();
+})();
